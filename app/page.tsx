@@ -237,118 +237,56 @@ export default function BlackboxLandingPage() {
         </section>
 
         {/* Installation Section */}
-        {/* <section id="installation" className="py-12 sm:py-20 relative">
+        <section id="installation" className="py-8 sm:py-12 lg:py-20 relative">
           <div className="absolute inset-0 opacity-5">
             <div className="absolute inset-0 bg-[linear-gradient(45deg,transparent_35%,rgba(255,255,255,.1)_50%,transparent_65%)] bg-[length:20px_20px] animate-pulse"></div>
           </div>
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div className="max-w-4xl mx-auto">
-              <div className="text-center mb-12">
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">Quick Installation</h2>
-                <p className="text-base sm:text-lg text-muted-foreground">
-                  Get started with Blackbox in under 2 minutes.
-                </p>
-              </div>
-
-              <Card className="border-orange-500/20 bg-gradient-to-br from-background via-background to-orange-500/5 shadow-xl">
-                <CardHeader>
-                  <CardTitle className="flex items-center text-lg sm:text-xl">
-                    <Github className="mr-2 h-5 w-5" />
-                    Developer Installation
-                  </CardTitle>
-                  <CardDescription>Clone the repository and load the extension in developer mode.</CardDescription>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  <div className="bg-muted rounded-lg p-3 sm:p-4 font-mono text-xs sm:text-sm overflow-x-auto">
-                    <div className="text-muted-foreground mb-2"># Clone the repository</div>
-                    <div className="whitespace-nowrap">git clone https://github.com/anudeepreddy/blackbox.git</div>
-                    <div>cd blackbox</div>
-                    <div className="mt-3 text-muted-foreground"># Build the extension</div>
-                    <div>npm run build</div>
-                  </div>
-
-                  <div className="grid md:grid-cols-2 gap-6 mt-6">
-                    <div className="space-y-3">
-                      <h4 className="font-semibold flex items-center">
-                        <CheckCircle className="mr-2 h-4 w-4 text-orange-500" />
-                        Chrome Setup
-                      </h4>
-                      <ul className="space-y-2 text-sm text-muted-foreground">
-                        <li>• Open chrome://extensions/</li>
-                        <li>• Enable "Developer mode"</li>
-                        <li>• Click "Load unpacked"</li>
-                        <li>• Select .output/chrome-mv3 folder</li>
-                      </ul>
-                    </div>
-
-                    <div className="space-y-3">
-                      <h4 className="font-semibold flex items-center">
-                        <CheckCircle className="mr-2 h-4 w-4 text-cyan-500" />
-                        Start Using
-                      </h4>
-                      <ul className="space-y-2 text-sm text-muted-foreground">
-                        <li>• Click Blackbox extension icon</li>
-                        <li>• Start recording your session</li>
-                        <li>• Interact with any webpage</li>
-                        <li>• Stop and replay instantly</li>
-                      </ul>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-        </section> */}
-        <section id="installation" className="py-12 sm:py-20 relative">
-          <div className="absolute inset-0 opacity-5">
-            <div className="absolute inset-0 bg-[linear-gradient(45deg,transparent_35%,rgba(255,255,255,.1)_50%,transparent_65%)] bg-[length:20px_20px] animate-pulse"></div>
-          </div>
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="container mx-auto px-3 sm:px-4 lg:px-8 relative z-10">
             <div className="max-w-6xl mx-auto">
-              <div className="text-center mb-12">
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">Installation Options</h2>
-                <p className="text-base sm:text-lg text-muted-foreground">
+              <div className="text-center mb-8 sm:mb-12">
+                <h2 className="text-xl sm:text-2xl lg:text-4xl font-bold mb-3 sm:mb-4">Installation Options</h2>
+                <p className="text-sm sm:text-base lg:text-lg text-muted-foreground px-2">
                   Choose your preferred installation method and get started in minutes.
                 </p>
               </div>
 
-              <div className="grid lg:grid-cols-2 gap-8">
+              <div className="space-y-6 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-6">
                 {/* Option 1: Download from Releases */}
                 <Card className="border-orange-500/20 bg-gradient-to-br from-background via-background to-orange-500/5 shadow-xl">
-                  <CardHeader>
-                    <div className="flex items-center justify-between mb-2">
-                      <CardTitle className="flex items-center text-lg sm:text-xl">
-                        <Chrome className="mr-2 h-5 w-5 text-orange-500" />
-                        Download Pre-built Extension
+                  <CardHeader className="pb-3 sm:pb-6">
+                    <div className="flex flex-col space-y-2 sm:space-y-0 sm:flex-row sm:items-center sm:justify-between">
+                      <CardTitle className="flex items-center text-base sm:text-lg lg:text-xl">
+                        <Chrome className="mr-2 h-4 w-4 sm:h-5 sm:w-5 text-orange-500 flex-shrink-0" />
+                        <span className="break-words">Download Pre-built Extension</span>
                       </CardTitle>
-                      <Badge className="bg-orange-500/10 text-orange-700 dark:text-orange-300 border-orange-500/20">
+                      <Badge className="bg-orange-500/10 text-orange-700 dark:text-orange-300 border-orange-500/20 text-xs self-start sm:self-center">
                         Recommended
                       </Badge>
                     </div>
-                    <CardDescription>
+                    <CardDescription className="text-xs sm:text-sm">
                       Download the latest pre-built extension package from GitHub releases.
                     </CardDescription>
                   </CardHeader>
-                  <CardContent className="space-y-4">
-                    <div className="space-y-3">
-                      <h4 className="font-semibold flex items-center text-sm">
-                        <CheckCircle className="mr-2 h-4 w-4 text-orange-500" />
+                  <CardContent className="space-y-3 sm:space-y-4 pt-0">
+                    <div className="space-y-2 sm:space-y-3">
+                      <h4 className="font-semibold flex items-center text-xs sm:text-sm">
+                        <CheckCircle className="mr-2 h-3 w-3 sm:h-4 sm:w-4 text-orange-500 flex-shrink-0" />
                         Quick Setup Steps
                       </h4>
-                      <ol className="space-y-2 text-sm text-muted-foreground list-decimal list-inside ml-6">
-                        <li>Download the latest release ZIP file</li>
-                        <li>Extract the ZIP to a folder on your computer</li>
-                        <li>Open chrome://extensions/ in Chrome</li>
-                        <li>Enable "Developer mode" toggle</li>
-                        <li>Click "Load unpacked" and select the extracted folder</li>
+                      <ol className="space-y-1.5 sm:space-y-2 text-xs sm:text-sm text-muted-foreground list-decimal list-inside ml-4 sm:ml-6">
+                        <li className="break-words">Download the latest release ZIP file</li>
+                        <li className="break-words">Extract the ZIP to a folder on your computer</li>
+                        <li className="break-words">Open <span className="font-mono text-xs bg-muted px-1 rounded">chrome://extensions/</span> in Chrome</li>
+                        <li className="break-words">Enable "Developer mode" toggle</li>
+                        <li className="break-words">Click "Load unpacked" and select the extracted folder</li>
                       </ol>
                     </div>
                     
                     <Button
-                      className="w-full mt-4 bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white border-0 shadow-lg shadow-orange-500/25 hover:shadow-orange-500/40 transition-all duration-200"
+                      className="w-full mt-3 sm:mt-4 bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white border-0 shadow-lg shadow-orange-500/25 hover:shadow-orange-500/40 transition-all duration-200 text-sm sm:text-base"
                       onClick={() => window.open("https://github.com/anudeepreddy/blackbox/releases/latest", "_blank")}
                     >
-                      <Chrome className="mr-2 h-4 w-4" />
+                      <Chrome className="mr-2 h-3 w-3 sm:h-4 sm:w-4" />
                       Download Latest Release
                     </Button>
                   </CardContent>
@@ -356,43 +294,43 @@ export default function BlackboxLandingPage() {
 
                 {/* Option 2: Build from Source */}
                 <Card className="border-cyan-500/20 bg-gradient-to-br from-background via-background to-cyan-500/5 shadow-xl">
-                  <CardHeader>
-                    <CardTitle className="flex items-center text-lg sm:text-xl">
-                      <Github className="mr-2 h-5 w-5 text-cyan-500" />
+                  <CardHeader className="pb-3 sm:pb-6">
+                    <CardTitle className="flex items-center text-base sm:text-lg lg:text-xl">
+                      <Github className="mr-2 h-4 w-4 sm:h-5 sm:w-5 text-cyan-500 flex-shrink-0" />
                       Build from Source
                     </CardTitle>
-                    <CardDescription>
+                    <CardDescription className="text-xs sm:text-sm">
                       Clone the repository and build the extension yourself for development.
                     </CardDescription>
                   </CardHeader>
-                  <CardContent className="space-y-4">
-                    <div className="bg-muted rounded-lg p-3 sm:p-4 font-mono text-xs sm:text-sm overflow-x-auto">
+                  <CardContent className="space-y-3 sm:space-y-4 pt-0">
+                    <div className="bg-muted rounded-lg p-2 sm:p-3 lg:p-4 font-mono text-xs overflow-x-auto">
                       <div className="text-muted-foreground mb-2"># Clone and build</div>
-                      <div className="whitespace-nowrap">git clone https://github.com/anudeepreddy/blackbox.git</div>
-                      <div>cd blackbox</div>
-                      <div>npm install</div>
-                      <div>npm run build</div>
+                      <div className="whitespace-nowrap text-xs">git clone https://github.com/anudeepreddy/blackbox.git</div>
+                      <div className="text-xs">cd blackbox</div>
+                      <div className="text-xs">npm install</div>
+                      <div className="text-xs">npm run build</div>
                     </div>
 
-                    <div className="space-y-3">
-                      <h4 className="font-semibold flex items-center text-sm">
-                        <CheckCircle className="mr-2 h-4 w-4 text-cyan-500" />
+                    <div className="space-y-2 sm:space-y-3">
+                      <h4 className="font-semibold flex items-center text-xs sm:text-sm">
+                        <CheckCircle className="mr-2 h-3 w-3 sm:h-4 sm:w-4 text-cyan-500 flex-shrink-0" />
                         Chrome Setup
                       </h4>
-                      <ol className="space-y-2 text-sm text-muted-foreground list-decimal list-inside ml-6">
-                        <li>Open chrome://extensions/ in Chrome</li>
-                        <li>Enable "Developer mode" toggle</li>
-                        <li>Click "Load unpacked" extension</li>
-                        <li>Select the <code className="bg-muted px-1 rounded text-xs">.output/chrome-mv3</code> folder</li>
+                      <ol className="space-y-1.5 sm:space-y-2 text-xs sm:text-sm text-muted-foreground list-decimal list-inside ml-4 sm:ml-6">
+                        <li className="break-words">Open <span className="font-mono text-xs bg-muted px-1 rounded">chrome://extensions/</span> in Chrome</li>
+                        <li className="break-words">Enable "Developer mode" toggle</li>
+                        <li className="break-words">Click "Load unpacked" extension</li>
+                        <li className="break-words">Select the <code className="bg-muted px-1 rounded text-xs">.output/chrome-mv3</code> folder</li>
                       </ol>
                     </div>
 
                     <Button
                       variant="outline"
-                      className="w-full mt-4 border-cyan-500/20 text-cyan-600 hover:bg-cyan-500/10 hover:text-cyan-700 hover:border-cyan-500/30 dark:text-cyan-400 dark:hover:text-cyan-300 dark:hover:bg-cyan-500/10 transition-colors"
+                      className="w-full mt-3 sm:mt-4 border-cyan-500/20 text-cyan-600 hover:bg-cyan-500/10 hover:text-cyan-700 hover:border-cyan-500/30 dark:text-cyan-400 dark:hover:text-cyan-300 dark:hover:bg-cyan-500/10 transition-colors text-sm sm:text-base"
                       onClick={() => window.open("https://github.com/anudeepreddy/blackbox", "_blank")}
                     >
-                      <Github className="mr-2 h-4 w-4" />
+                      <Github className="mr-2 h-3 w-3 sm:h-4 sm:w-4" />
                       View on GitHub
                     </Button>
                   </CardContent>
@@ -400,36 +338,36 @@ export default function BlackboxLandingPage() {
               </div>
 
               {/* Common Next Steps */}
-              <Card className="mt-8 border-green-500/20 bg-gradient-to-br from-background via-background to-green-500/5">
-                <CardHeader>
-                  <CardTitle className="flex items-center text-lg">
-                    <CheckCircle className="mr-2 h-5 w-5 text-green-500" />
+              <Card className="mt-6 sm:mt-8 border-green-500/20 bg-gradient-to-br from-background via-background to-green-500/5">
+                <CardHeader className="pb-3 sm:pb-6">
+                  <CardTitle className="flex items-center text-base sm:text-lg">
+                    <CheckCircle className="mr-2 h-4 w-4 sm:h-5 sm:w-5 text-green-500 flex-shrink-0" />
                     After Installation
                   </CardTitle>
-                  <CardDescription>Once installed, here's how to start using Blackbox</CardDescription>
+                  <CardDescription className="text-xs sm:text-sm">Once installed, here's how to start using Blackbox</CardDescription>
                 </CardHeader>
-                <CardContent>
-                  <div className="grid md:grid-cols-3 gap-6">
+                <CardContent className="pt-0">
+                  <div className="space-y-4 sm:space-y-0 sm:grid sm:grid-cols-3 sm:gap-4 lg:gap-6">
                     <div className="text-center">
-                      <div className="h-12 w-12 bg-green-500/10 rounded-lg flex items-center justify-center mx-auto mb-3">
-                        <span className="text-xl font-bold text-green-600">1</span>
+                      <div className="h-10 w-10 sm:h-12 sm:w-12 bg-green-500/10 rounded-lg flex items-center justify-center mx-auto mb-2 sm:mb-3">
+                        <span className="text-lg sm:text-xl font-bold text-green-600">1</span>
                       </div>
-                      <h4 className="font-semibold mb-2">Find the Extension</h4>
-                      <p className="text-sm text-muted-foreground">Look for the Blackbox icon in your Chrome toolbar</p>
+                      <h4 className="font-semibold mb-1 sm:mb-2 text-sm sm:text-base">Find the Extension</h4>
+                      <p className="text-xs sm:text-sm text-muted-foreground">Look for the Blackbox icon in your Chrome toolbar</p>
                     </div>
                     <div className="text-center">
-                      <div className="h-12 w-12 bg-green-500/10 rounded-lg flex items-center justify-center mx-auto mb-3">
-                        <span className="text-xl font-bold text-green-600">2</span>
+                      <div className="h-10 w-10 sm:h-12 sm:w-12 bg-green-500/10 rounded-lg flex items-center justify-center mx-auto mb-2 sm:mb-3">
+                        <span className="text-lg sm:text-xl font-bold text-green-600">2</span>
                       </div>
-                      <h4 className="font-semibold mb-2">Start Recording</h4>
-                      <p className="text-sm text-muted-foreground">Click the icon and hit "Start Recording" on any webpage</p>
+                      <h4 className="font-semibold mb-1 sm:mb-2 text-sm sm:text-base">Start Recording</h4>
+                      <p className="text-xs sm:text-sm text-muted-foreground">Click the icon and hit "Start Recording" on any webpage</p>
                     </div>
                     <div className="text-center">
-                      <div className="h-12 w-12 bg-green-500/10 rounded-lg flex items-center justify-center mx-auto mb-3">
-                        <span className="text-xl font-bold text-green-600">3</span>
+                      <div className="h-10 w-10 sm:h-12 sm:w-12 bg-green-500/10 rounded-lg flex items-center justify-center mx-auto mb-2 sm:mb-3">
+                        <span className="text-lg sm:text-xl font-bold text-green-600">3</span>
                       </div>
-                      <h4 className="font-semibold mb-2">Replay & Debug</h4>
-                      <p className="text-sm text-muted-foreground">Stop recording and instantly replay your session</p>
+                      <h4 className="font-semibold mb-1 sm:mb-2 text-sm sm:text-base">Replay & Debug</h4>
+                      <p className="text-xs sm:text-sm text-muted-foreground">Stop recording and instantly replay your session</p>
                     </div>
                   </div>
                 </CardContent>

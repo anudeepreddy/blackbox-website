@@ -1,0 +1,32 @@
+import type React from "react"
+import type { Metadata } from "next"
+import { GeistSans } from "geist/font/sans"
+import { GeistMono } from "geist/font/mono"
+import { Suspense } from "react"
+import { ThemeProvider } from "@/components/theme-provider"
+import "./globals.css"
+
+export const metadata: Metadata = {
+  title: "Blackbox - Chrome Extension for Session Recording & Debugging",
+  description:
+    "Record user interactions, console logs, and network requests. Export sessions as JSON and replay them for comprehensive debugging and QA analysis.",
+  icons: {
+    icon: '/favicon.ico',
+  },
+}
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode
+}>) {
+  return (
+    <html lang="en">
+      <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable}`}>
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
+          <Suspense fallback={null}>{children}</Suspense>
+        </ThemeProvider>
+      </body>
+    </html>
+  )
+}

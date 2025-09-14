@@ -78,6 +78,31 @@ export default function BlackboxLandingPage() {
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </div>
+              <div className="flex justify-center mt-8">
+                <a 
+                  href="https://www.producthunt.com/products/blackbox-7?embed=true&utm_source=badge-featured&utm_medium=badge&utm_source=badge-blackbox&#0045;ac00395a&#0045;cd2f&#0045;4230&#0045;8341&#0045;b14827aeba73" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:scale-105 transition-transform duration-200"
+                >
+                  <img 
+                    src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1015987&theme=light&t=1757833549369" 
+                    alt="Blackbox - Chrome extension for session recording & debugging | Product Hunt" 
+                    className="block dark:hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-200" 
+                    style={{width: '250px', height: '54px'}} 
+                    width="250" 
+                    height="54" 
+                  />
+                  <img 
+                    src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1015987&theme=dark&t=1757833588400" 
+                    alt="Blackbox - Chrome extension for session recording & debugging | Product Hunt" 
+                    className="hidden dark:block rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-200" 
+                    style={{width: '250px', height: '54px'}} 
+                    width="250" 
+                    height="54" 
+                  />
+                </a>
+              </div>
             </div>
           </div>
         </section>
